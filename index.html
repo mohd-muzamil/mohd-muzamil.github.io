@@ -5,7 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Mohamed Muzamil H</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+  <style>
+    .btn {
+      background-color: rgb(238, 238, 238);
+      border: none;
+      border-radius: 2px;
+      /* color: white; */
+      /* padding: 12px 30px; */
+      cursor: pointer;
+      align-items: center;
+      /* font-size: 20px; */
+    }
+    
+    /* Darker background on mouse-over */
+    /* .btn:hover { */
+      /* background-color: white; */
+    /* } */
+    </style>
   <body>
     <!-- idea: have a javascript animated loss function converging in the header? :p -->
     <div id="dhead" class="container">
@@ -22,10 +40,17 @@
             <a href="https://www.linkedin.com/in/mohd11/"><img src="assets/clinkedin.svg" class="iico" /></a>
             <!-- <a href="https://medium.com/@karpathy"><img src="assets/crss.svg" class="iico" /></a> -->
             <img src="assets/cemail.svg" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" />
-          </div>
-          <div id="demail"></div> <!-- will reveal email -->
-        </div>
+            <br>
+            <a href="https://drive.google.com/file/d/13wnhjc1g9jO6NedNtUEWouzo2H7VxMzO/view?usp=sharing" download>
+                <button class="btn"><i class="fa fa-download"></i> Download CV</button>
+            </a>
+            <div id="demail"></div> <!-- will reveal email -->
+            
       </div>
+        </div>
+        
+      </div>
+      
     </div>
 
     <hr>
@@ -279,7 +304,7 @@
     <!-- <br><br><br><br><br><br><br><br><br> -->
     
 
-    <!-- attempt hiding from spambots :p -->
+    <!-- attempt hiding from spambots :p -->     
     <script type="text/javascript">
       var e_is_shown = false;
       document.getElementById('iemail').addEventListener("click", function(){
