@@ -1,2 +1,2 @@
 # mohd-muzamil.github.io
-portfolio
+/href{portfolio}{http://mohd-muzamil.github.io}
