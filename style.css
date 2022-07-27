@@ -80,7 +80,7 @@ h2 {
 #demail {
     margin-top: 10px;
     color: #555;
-    opacity: 0;
+    /* opacity: 0; */
     transition: opacity 0.7s;
 }
 hr {
@@ -246,3 +246,11 @@ hr {
     list-style-type: none;
     padding-left: 0;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding:5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
