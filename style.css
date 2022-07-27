@@ -145,9 +145,10 @@ hr {
     padding: 0;
 }
 .ctitle {
-    font-size: 36px;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    font-size: 30px;
+    color: gray;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 #featured-talks .row {
     grid-column-gap: 10px;
@@ -254,3 +255,48 @@ table, th, td {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+  li {
+    width:50vw;
+  }
+
+.title {
+font-weight: bold;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    }
+
+.subtext {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+a {
+    text-decoration: none;
+}
+
+/* Clear floats after the columns */
+.project .row{
+    display: flex;
+  }
+
+.card{
+    margin: 10px;
+    padding-left: 20px;
+  }
+
+.signature{
+    margin-right:20px;
+    color: white;
+    background-color: #555;
+    border: 1px solid red;
+    padding: 8px;
+    border-radius: 50px 25px;
+    /* font-family: "Lucida Console"; */
+    font-family: Chalkduster;
+}

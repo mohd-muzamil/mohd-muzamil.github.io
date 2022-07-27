@@ -1,239 +1,520 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Mohamed Muzamil H</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <style>
+</head>
+<style>
     .btn {
-      background-color: rgb(238, 238, 238);
-      border: none;
-      border-radius: 2px;
-      /* color: white; */
-      /* padding: 12px 30px; */
-      cursor: pointer;
-      align-items: center;
-      /* font-size: 20px; */
+        background-color: rgb(238, 238, 238);
+        border: none;
+        border-radius: 2px;
+        /* color: white; */
+        /* padding: 12px 30px; */
+        cursor: pointer;
+        align-items: center;
+        /* font-size: 20px; */
     }
-    
+
     /* Darker background on mouse-over */
     /* .btn:hover { */
-      /* background-color: white; */
+    /* background-color: white; */
     /* } */
-    </style>
-  <body>
+</style>
+
+<body>
     <!-- idea: have a javascript animated loss function converging in the header? :p -->
     <div id="dhead" class="container">
-      <div class="row">
-        <div id="dpic">
-          <img src="assets/me_new.jpg" class="ppic" />
+        <div class="row">
+            <div id="dpic">
+                <img src="assets/me_new.jpg" class="ppic" />
+            </div>
+            <div id="ddesc">
+                <h1>Mohamed Muzamil H</h1>
+                <h2>I like to bulid intelligent systems</h2>
+                <div id="dico">
+                    <a href="https://www.linkedin.com/in/mohd11/"><img src="assets/clinkedin.svg" class="iico" /></a>
+                    <a href="https://github.com/mohd-muzamil"><img src="assets/cgithub.svg" class="iico" /></a>
+                    <a href="https://twitter.com/Muzzu08"><img src="assets/ctwitter.svg" class="iico" /></a>
+                    <!-- <a href="https://medium.com/@karpathy"><img src="assets/crss.svg" class="iico" /></a> -->
+                    <img src="assets/cemail.svg" style="cursor: pointer;" class="iico" id="iemail"
+                        title="click to reveal" />
+                    <br>
+
+                    <a href="https://drive.google.com/file/d/13wnhjc1g9jO6NedNtUEWouzo2H7VxMzO/view?usp=sharing"
+                        download>
+                        <button class="btn"><i class="fa fa-file"></i> Resume </button>
+                    </a>
+                    <div id="demail"></div> <!-- will reveal email -->
+                </div>
+            </div>
+
         </div>
-        <div id="ddesc">
-          <h1>Mohamed Muzamil H</h1>
-          <h2>I like to bulid intelligent systems</h2>
-          <div id="dico">
-            <a href="https://www.linkedin.com/in/mohd11/"><img src="assets/clinkedin.svg" class="iico" /></a>
-            <a href="https://github.com/mohd-muzamil"><img src="assets/cgithub.svg" class="iico"/></a>
-            <a href="https://twitter.com/Muzzu08"><img src="assets/ctwitter.svg" class="iico" /></a>
-            <!-- <a href="https://medium.com/@karpathy"><img src="assets/crss.svg" class="iico" /></a> -->
-            <img src="assets/cemail.svg" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" />
-            <br>
-            
-            <a href="https://drive.google.com/file/d/13wnhjc1g9jO6NedNtUEWouzo2H7VxMzO/view?usp=sharing" download>
-                <button class="btn"><i class="fa fa-file"></i> Resume </button>
-            </a>
-            <div id="demail"></div> <!-- will reveal email -->
-      </div>
-        </div>
-        
-      </div>
     </div>
 
     <hr>
 
-    
-    <div class="container">
-        <div class="ctitle">about me</div>
-        <div>
-            <ul>
-                <li>Software professional with 5.5 years of industry experience focusing on Data.</li>
-                <li>I have an extensive background in the payments and banking domain.</li>
-                <li>Though my professional work experience has been in data testing, I have always been interested in development/coding. I used to take up every opportunity to learn to code.</li>
-                <li>My interest in coding significantly influenced my decision to pursue a research-based Master's degree in Canada.</li>
-            </ul>
-        </div>
-      </div>
-
-    <div style="background-color: #eee; padding-top: 1px; margin-top: 10px;">
-      <div class="container">
-        <div class="ctitle">education</div>
+    <!--################# ABOUT #################-->
+    <div style="background-color: #fff; padding-top: 1px; margin-top: 10px;">
         <div class="container">
-            <div class="entry row">
-                <div class="timespan">
-                  Jan.2020 - July.2022
-                </div>
-                <div class="ico">
-                  <div class="entry-dot"></div>
-                  <img src="assets/dalhousie.jpeg" />
-                </div>
-                <div class="desc">
-                  <div class="htxt">
-                    <div>
-                        <b>Dalhousie University</b>, Halifax, Canada
-                        <br><b>Master of Computer Science</b>
-                        <br>My thesis research specialized in applying Data Analytics, Visualization and Machine learning to mobile sensing data to identify behavioural patterns that can indicate mental health.
-                        <br><br>I designed and developed a Visual Analytics tool using below Tech Stack:
-                        <table>
-                            <tr>
-                                <td>Front-end  </td> <td>Javascript &#x2022 d3.js &#x2022 HTML &#x2022 CSS &#x2022 Bootstrap</td></tr>
-                            <tr><td>Back-end  </td><td>Flask &#x2022 Python &#x2022 Pandas &#x2022 Scikit-learn</td></tr>
-                        </table>
-                        <a href="https://github.com/mohd-muzamil/flaskDashboard.git">Code</a>
-                        <a href="https://github.com/mohd-muzamil/IrisDashboard.git">Code-IRIS Data</a>
-                        <a href="https://explorata.herokuapp.com">Heroku Deployment</a>
-                        <br><a href="https://dalspace.library.dal.ca//handle/10222/81757">Master's Thesis Report</a>
-                        <br><br>
-                        I also have extensive research experience in <b>Deep Learning</b> with a publication at an international conference.
-                        <ul>
-                            <li>This project used generative models (pre-trained BigGAN) and state-of-the-art segmentation models (DeepLabV3 and FCN) for controlled image generation.</li>
-                            <li>In our case, we experimented with swapping the posture of the synthetically generated image of a Dog with a target posture.</li>
-                        </ul>
-                        <a href="https://github.com/mohd-muzamil/changeMyPet.git">code</a>
-                        <a href="https://link.springer.com/chapter/10.1007/978-3-030-88942-5_21">Publication link</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-
-        <div class="container">
-            <div class="entry row">
-                <div class="timespan">
-                  Aug.2010 - Jun.2014
-                </div>
-                <div class="ico">
-                  <div class="entry-dot"></div>
-                  <img src="assets/CMRIT.jpeg" />
-                </div>
-                <div class="desc">
-                  <div class="htxt">
-                    <b>CMR Institute of Technology</b>, Bengaluru, India
-                    <div>
-                        <b>Bachelor of Engineering</b>
-                        <br>Electronics and Communication
-                    </div>
-                </div>
-              </div>
-        </div>
-        </div>
-</div>
-
-    <div id="history" class="container">
-    <div class="ctitle">experience</div>
-      <div class="entry row">
-        <div class="timespan">
-          May.2021 - Aug.2021
-        </div>
-        <div class="ico">
-          <div class="entry-dot"></div>
-          <img src="assets/GOE.jpeg" />
-        </div>
-        <div class="desc">
-          <div class="htxt">
-            <b>Machine Learning Engineer Intern</b>
-            <br>Glas Ocean Electric
-            <br>Halifax, Canada
-            <ul>
-                <li>This research study involved building and testing statistical and machine
-                    learning models to predict fuel consumption and Greenhouse gas(GHG)
-                    emissions of fishing boats.</li>
-                <li>I developed a python based framework to bulid a preprocessing pipeline and
-                    model multiple time series regressors to predict the fuel consumption based on
-                    data representing boat’s movement (GPS, Accelerometer, Gyroscope, Ocean
-                    weather).</li>
-                <li>I also worked on analysing results using data visualization to assess the quality
-                    of prediction from 4 different regression models and presented the same to
-                    stake holders to help take data driven decisions.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry row">
-        <div class="timespan">
-          Sep.2021 - Dec.2021
-        </div>
-        <div class="ico">
-          <div class="entry-dot"></div>
-          <img src="assets/dalhousie.jpeg" />
-        </div>
-        <div class="desc">
-          <div class="htxt">
-            <b>Graduate Teaching Assistant</b>
-            <br> Dalhousie University
-            <div>
+            <div class="ctitle">About</div>
+            <div class="container" style="margin-left: 10px;">
                 <ul>
-                    <li>I was one of the two teaching assistants (TAs) for the graduate-level course called <b>Visual Analytics</b> instructed by - <a href="https://www.dal.ca/faculty/computerscience/faculty-staff/fernando-paulovich.html">Prof Fernando Paulovich</a>. </li>
-                    <li>The class was enrolled by 70+ graduate students.</li>
-                    <li>Responsiblities included design of course assignments, assesment and grading of submitted assignments and assisting students with course related queries.</li>
-                </ul>
-              </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="entry row">
-        <div class="timespan">
-          Aug.2014 - Dec.2019
-        </div>
-        <div class="ico">
-          <div class="entry-dot"></div>
-          <img src="assets/infosys.jpeg" />
-        </div>
-        <div class="desc">
-          <div class="htxt">
-            <b>Test Analyst</b>
-            <br>Infosys limited
-            <div class="container">
-                Corporate training • 4mos
-                <ul>
-                    <li>Java, Relational Databases(RDBMS), Data Integration tools such as Informatica for ETL operations and IBM Cognos for Analytics.</li>
+                    <li>Software professional with 5.5 years of industry experience focusing on Data.</li>
+                    <li>I have an extensive background in the payments and banking domain.</li>
+                    <li>Though my professional work experience has been in data testing, I have always been interested in development/coding. I used to take up every opportunity to learn to code.</li>
+                    <li>My interest in coding significantly influenced my decision to pursue a research-based Master's
+                        degree in Canada.</li>
+                    <li> Few of the things I enjoy outside work are Distance Running, Tennis, Hiking, Workout</li>
                 </ul>
             </div>
-            <div class="container">
-                Royal Bank of Scotland(RBS) • 6mos
-                <ul>
-                    <li>Validation of financial records migrated from RBS bank to Williams & Glyn.</li>
-                </ul>
-            </div>
-            <div class="container">
-                Visa(cards and payments) • 3yrs
-                <ul>
-                    <li>Validating transaction records distributed over 3 different data centres and
-                        testing schema changes in database.</li>
-                    <li>I developed an automated framework to validate the consistency of transaction
-                        records in the Hadoop environment, duplicated over different data centres.</li>
-                    <li>Identifying trends in credit and debit transactions by closely working with the
-                        development team to improve models used for prediction and anomaly
-                        detection.</li>
-                </ul>
-            </div>
-            <div class="container">
-                Bank of America • 1yr
-                <ul>
-                    <li>ETL testing of a data pipeline that processed loans related banking data for business analytics.</li>
-                    <li>Worked closely with Business Analysts, Scrum Master, Developers and Testers in Agile method of software development Education.</li>
-                </ul>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
 
-    <!-- <div style="background-color: #eee; padding-top: 1px; margin-top: 10px;">
+
+    <!--################# EDUCATION #################-->
+    <div style="background-color: #eee; padding-top: 1px; margin-top: 10px;">
+        <div class="container">
+            <div class="ctitle">Education</div>
+            <div class="entry row">
+                <div class="timespan">
+                    Jan.2020 - Jul.2022
+                </div>
+                <div class="ico">
+                    <div class="entry-dot"></div>
+                    <img src="assets/dalhousie.jpeg" />
+                </div>
+                <div class="desc">
+                    <div class="htxt">
+                        <div>
+                            <b><a href="https://www.dal.ca/about-dal.html" target="_blank">Dalhousie
+                                    University</a></b> | Halifax, Canada
+                            <br><b><a
+                                    href="https://www.dal.ca/academics/programs/graduate/computer-science/program-details/master-program0.html">Master
+                                    of Computer Science</b></a>
+                            <div class="subtext" style="display: inline;">(MCSc)</div>
+                            
+                            <div class="card" style="background-color:#eee; margin-left: 0px;">
+                                <div class="title">Graduate Courses</div>
+                                <ul style="margin:0px">
+                                    <li>Visual Analytics (CSCI6612) by <a
+                                            href="https://fpaulovich.wixsite.com/paulovich/about-me">Prof Fernando
+                                            Paulovich</a></li>
+                                    <li>Machine Learning (CSCI6505) by <a href="https://web.cs.dal.ca/~oore/">Prof
+                                            Sageev Oore</a></li>
+                                    <li>Deep Learning (CSCI6516) by <a href="https://web.cs.dal.ca/~oore/">Prof Sageev
+                                            Oore</a></li>
+                                    <li>Data Mining and Data Warehousing by <a href="https://web.cs.dal.ca/~qye/">Prof
+                                            Qiang(Chan) Ye</a></li>
+                                    <li>Visualization (CSCI6406 - Course Audited) by <a
+                                            href="https://web.cs.dal.ca/~sbrooks/">Prof Stephen Brooks</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="card" style="background-color:#eee; margin-left: 0px;">
+                                <div class="title">Master's Thesis</div>
+                                My thesis research specialized in applying <b>Data Analytics, Visualization and Machine
+                                    learning</b> to mobile sensing data to identify behavioural patterns
+                                that can indicate mental health.
+                                <br><a href="https://dalspace.library.dal.ca//handle/10222/81757" target="_blank">Thesis
+                                    Report</a>
+                                <br><br>I designed and developed a Visual Analytics tool that can achieve this using
+                                below Tech Stack:
+
+                                <div class="subtext">
+                                    <table>
+                                        <tr>
+                                            <td>Front-end </td>
+                                            <td>Javascript &#x2022 d3.js &#x2022 HTML &#x2022 CSS &#x2022 Bootstrap</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Back-end </td>
+                                            <td>Flask &#x2022 Python &#x2022 Pandas &#x2022 Scikit-learn</td>
+                                        </tr>
+                                    </table>
+
+                                    <a href="https://github.com/mohd-muzamil/flaskDashboard.git"
+                                        target="_blank">Code</a> (Thesis implementation)
+                                    <br><a href="https://github.com/mohd-muzamil/IrisDashboard.git"
+                                        target="_blank">Code</a> (Implementation with IRIS Dataset )
+                                    <br><a href="https://explorata.herokuapp.com" target="_blank">Heroku Deployment</a>
+                                    (IRIS Dataset)
+                                    <br><a href="https://explorata.herokuapp.com" target="_blank">Video</a> (IRIS
+                                    Dataset)
+                                </div>
+                            </div>
+                            
+                            <div class="card" style="background-color:#eee; margin-left: 0px;">
+                                <br>I also have research experience in <b>Deep Learning</b> with a publication at an
+                                international conference.
+                                <ul>
+                                    <li>This project used generative models (pre-trained BigGAN) and state-of-the-art
+                                        segmentation models (DeepLabV3 and FCN) for controlled image generation.</li>
+                                    <li>In our case, we experimented with swapping the posture of the synthetically
+                                        generated image of a Dog with a target posture.</li>
+                                </ul>
+
+                                <div class="subtitle">
+                                    <a href="https://github.com/mohd-muzamil/changeMyPet.git" target="_blank">code</a>
+                                    <a href="https://dcsi.cs.dal.ca/wp-content/uploads/2021/07/11.pdf"
+                                        target="_blank">Research Paper</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entry row">
+                <div class="timespan">
+                    Aug.2010 - Jun.2014
+                </div>
+                <div class="ico">
+                    <div class="entry-dot"></div>
+                    <img src="assets/CMRIT.jpeg" />
+                </div>
+                <div class="desc">
+                    <div class="htxt">
+                        <b><a href="https://www.cmrit.ac.in/" target="_blank">CMR Institute of Technology</a></b> |
+                        Bengaluru, India
+                        <div>
+                            <b><a href="https://www.cmrit.ac.in/courses/be-electronics-communication-engineering/"
+                                    target="_blank">Bachelor of Engineering</a></b>
+                            <div class="subtext" style="display: inline;">(BE)</div>
+                            <br>Electronics and Communication Engineering
+                            <div class="subtext" style="display: inline;">(ECE)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+
+    <!--################# EXPERIENCE #################-->
+    <div style="background-color: #fff;">
+        <div id="history" class="container">
+            <div class="ctitle">Experience</div>
+            <div class="entry row">
+                <div class="timespan">
+                    May.2021 - Aug.2021 4mos
+                </div>
+                <div class="ico">
+                    <div class="entry-dot"></div>
+                    <img src="assets/GOE.jpeg" />
+                </div>
+                <div class="desc">
+                    <div class="htxt">
+                        <b>Machine Learning Engineer Intern</b>
+                        <div class="title"><a href="http://glasoceanelectric.com/" target="_blank">Glas Ocean
+                                Electric</a>
+                            <div class="subtext" style="font-weight: normal; display: inline;"> | Halifax, Canada</div>
+                        </div>
+                        <ul>
+                            <li>This research study involved building and testing statistical and machine
+                                learning models to predict fuel consumption and Greenhouse gas(GHG)
+                                emissions of fishing boats.</li>
+                            <li>I developed a python based framework to bulid a preprocessing pipeline and
+                                model multiple time series regressors to predict the fuel consumption based on
+                                data representing boat’s movement (GPS, Accelerometer, Gyroscope, Ocean
+                                weather).</li>
+                            <li>I also worked on analysing results using data visualization to assess the quality
+                                of prediction from 4 different regression models and presented the same to
+                                stake holders to help take data driven decisions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entry row">
+                <div class="timespan">
+                    Aug.2014 - Dec.2019 5yrs 4mos
+                </div>
+                <div class="ico">
+                    <div class="entry-dot"></div>
+                    <img src="assets/infosys.jpeg" />
+                </div>
+                <div class="desc">
+                    <div class="htxt">
+                        <b>Test Analyst</b>
+                        <br>
+                        <div class="title">Infosys limited
+                            <div class="subtext" style="font-weight: normal; display: inline;"> | Bengaluru, India</div>
+                        </div>
+                        <div class="container">
+                            <div class="subtitle">Corporate training
+                                <div class="subtext" style="font-weight: normal; display: inline;"> • 4mos</div>
+                            </div>
+                            <ul>
+                                <li>Java, Relational Databases(RDBMS), Data Integration tools such as Informatica
+                                    for ETL operations and IBM Cognos for Analytics.</li>
+                            </ul>
+                        </div>
+
+                        <div class="subtitle">Client Company:</div>
+                        <div class="container">
+                            <div class="subtitle">Royal Bank of Scotland (RBS)
+                                <div class="subtext" style="font-weight: normal; display: inline;"> • 6mos</div>
+                            </div>
+                            <ul>
+                                <li>Validation of financial records migrated from RBS bank to Williams & Glyn.</li>
+                            </ul>
+                        </div>
+                        <div class="container">
+                            <div class="subtitle">Visa (cards and payments)
+                                <div class="subtext" style="font-weight: normal; display: inline;"> • 3yrs</div>
+                            </div>
+                            <ul>
+                                <li>Validating transaction records distributed over 3 different data centres and
+                                    testing schema changes in database.</li>
+                                <li>I developed an automated framework to validate the consistency of transaction
+                                    records in the Hadoop environment, duplicated over different data centres.</li>
+                                <li>Identifying trends in credit and debit transactions by closely working with the
+                                    development team to improve models used for prediction and anomaly
+                                    detection.</li>
+                            </ul>
+                        </div>
+                        <div class="container">
+                            <div class="subtitle">Bank of America
+                                <div class="subtext" style="font-weight: normal; display: inline;"> • 1yr</div>
+                            </div>
+                            <ul>
+                                <li>ETL testing of a data pipeline that processed loans related banking data for
+                                    business analytics.</li>
+                                <li>Worked closely with Business Analysts, Scrum Master, Developers and Testers in
+                                    Agile method of software development Education.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="entry row">
+                <div class="timespan">
+                    Sep.2021 - Dec.2021 4mos
+                </div>
+                <div class="ico">
+                    <div class="entry-dot"></div>
+                    <img src="assets/dalhousie.jpeg" />
+                </div>
+                <div class="desc">
+                    <div class="htxt">
+                        <b>Graduate Teaching Assistant (TA)</b>
+                        <br>
+                        <div class="title">Dalhousie University</div>
+                        <div>
+                            <ul>
+                                <li>I was one of the two teaching assistants for the graduate-level course
+                                    called <b>Visual Analytics</b> instructed by - <a
+                                        href="https://www.dal.ca/faculty/computerscience/faculty-staff/fernando-paulovich.html">Prof
+                                        Fernando Paulovich</a>. </li>
+                                <li>The class was enrolled by 70+ graduate students.</li>
+                                <li>Responsibilities included the design of course assignments, assessment/grading of
+                                    submitted assignments, and assisting students with course-related queries.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: #eee; padding-top: 1px; margin-top: 10px;">
+        <div id="pet-projects" class="container">
+            <div class="ctitle">Projects</div>
+            <!-- Project1 -->
+            <div class="project">
+                <div class="row">
+                    <div class="col" style="width:20%">
+                        <div class="pico">
+                            <img src="assets/Hmine.webp" style="width:100%;height:auto"> 
+                        </div>
+                    </div>
+                    <div class="col" style="width:80%">
+                        <div class="pdesc">
+                            <div class="pdesc">
+                                <b><a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.436.7290&rep=rep1&type=pdf" target="_blank">H-mine Algorithm:</a></b>
+                                 Python implementation of an efficient algorithm to mine frequent patterns in large Datasets.</div>
+                            <a href="https://github.com/mohd-muzamil/H-mine-Algorithm" target="_blank">code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pend"></div>
+            </div>
+
+            <!-- Project2 -->
+            <div class="project">
+                <div class="row">
+                    <div class="col" style="width:20%">
+                        <div class="pico">
+                            <img src="assets/ChangeMyPet.png" style="width:100%;height:auto"> 
+                        </div>
+                    </div>
+                    <div class="col" style="width:80%">
+                        <div class="pdesc">
+                            <div class="pdesc"><b>Change My Pet:</b> Experimental research project developed as part of Deep Learning Course requirement.
+                                <br>This project used generative models (pre-trained BigGAN) and state-of-the-art
+                                        segmentation models (DeepLabV3 and FCN) for controlled image generation.
+                                <br>In our case, we experimented with swapping the posture of the synthetically
+                                        generated image of a Dog with a target posture.
+                                </div>
+                                <a href="https://github.com/mohd-muzamil/changeMyPet.git" target="_blank">code</a>
+                            </div>
+                    </div>
+                </div>
+                <div class="pend"></div>
+            </div>
+
+            <!-- Project3 -->
+            <div class="project">
+                <div class="row">
+                    <div class="col" style="width:20%">
+                        <div class="pico">
+                            <img src="assets/UKTraffficIncidents.png" style="width:100%;height:auto"> 
+                        </div>
+                    </div>
+                    <div class="col" style="width:80%">
+                        <div class="pdesc">
+                            <div class="pdesc"><b>Visual Analysis of UK Traffic Incidents:</b> Interactive Webapp developed using Plotly Dash to analys Uk Traffic incidents.
+                            </div>
+                            <a href="https://github.com/mohd-muzamil/Dashboard-Analysis-of-Traffic-incidents-in-UK.git" target="_blank">code</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="pend"></div>
+            </div>
+
+            <!-- Project4 -->
+            <div class="project">
+                <div class="row">
+                    <div class="col" style="width:20%">
+                        <div class="pico">
+                            <img src="assets/Explorata.png" style="width:100%;height:auto"> 
+                        </div>
+                    </div>
+                    <div class="col" style="width:80%">
+                        <div class="pdesc">
+                            <div class="pdesc"><b>Visual Analysis of IRIS data:</b> Interactive visual analytics tool developed using D3.js and Flask to visually analyse IRIS dataset.
+                            </div>
+                            <a href="https://github.com/mohd-muzamil/IrisDashboard.git" target="_blank">code</a> |
+                            <a href="https://explorata.herokuapp.com" target="_blank">Heroku_Deployment</a> |
+                            <a href="https://explorata.herokuapp.com" target="_blank">Video</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="pend"></div>
+            </div>
+
+            <!-- Project5 -->
+            <div class="project">
+                <div class="row">
+                    <div class="col" style="width:20%">
+                        <div class="pico">
+                            <img src="assets/Thesis.png" style="width:100%;height:auto"> 
+                        </div>
+                    </div>
+                    <div class="col" style="width:80%">
+                        <div class="pdesc">
+                            <div class="pdesc"><b>Visual Analysis of Mobile Sensing data:</b> Interactive visual analytics tool developed using D3.js and Flask to visually analyse IRIS dataset.
+                                <br> Master's Thesis Project
+                            </div>
+                            <a href="https://github.com/mohd-muzamil/IrisDashboard.git" target="_blank">code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pend"></div>
+            </div>
+
+
+        </div>
+
+
+        <!--################# PUBLICATIONS #################-->
+        <div style="background-color: #fff; padding-top: 1px; margin-top: 10px;">
+            <div class="container">
+                <div class="ctitle">Publication</div>
+
+                <div class="pub">
+                    <div class="pub-title"><a href="https://link.springer.com/chapter/10.1007/978-3-030-88942-5_21"
+                            target="_blank">Controlling
+                            BigGAN Image Generation with a Segmentation Network</a></div>
+                    <br> venue:
+                    <div class="pub-venue">24th International Conference on Discovery Science 11-13 October, 2021
+                        Halifax,
+                        Canada</div>
+                    <br> authors:
+                    <div class="pub-authors" style="display:inline">Aman Jaiswal, Harpreet Singh Sodhi, Mohamed Muzamil
+                        H,
+                        Rajveen Singh Chandhok,
+                        Sageev Oore, and Chandramouli Shama Sastry</div>
+                </div>
+
+                <div>
+                    <br>
+                    Also on <a href="https://scholar.google.com/citations?hl=en&user=wSFGgs8AAAAJ">Google Scholar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="container">
+      <div class="ctitle">misc unsorted</div>
+      <ul style="padding-left: 10px;">
+        <li><a href="https://web.eecs.umich.edu/~justincj/">Justin Johnson</a> and I held a reading group on Clubhouse. See <a href="https://www.youtube.com/watch?v=gMc90bqHMSM">YouTube</a> or as <a href="https://podcasts.apple.com/us/podcast/deep-learning-deep-dive/id1555309024">podcast</a>.</li>
+        <li>I joined the 2020 edition of MIT Technology Review's <a href="https://www.technologyreview.com/innovators-under-35/2020/">35 Innovators Under 35</a></li>
+        <li>My <a href="http://karpathy.github.io/">primary blog</a> and my <a href="https://medium.com/@karpathy">other blog</a></li>
+        <li>I like and use <a href="https://www.goodreads.com/user/show/13472185-andrej-karpathy">Goodreads</a> for keeping track of reading, janky as it is.</li>
+        <li>I used to use <a href="https://www.quora.com/session/Andrej-Karpathy/1">Quora</a>. I do not think they made the right choice with aggressive paywalls.</li>
+        <li><a href="http://lossfunctions.tumblr.com/">Loss function Tumblr</a> :D! My collection of funny loss functions.</li>
+        <li>Some advice for <a href="https://cs.stanford.edu/people/karpathy/advice.html">undergrads</a> and advice for those <a href="http://karpathy.github.io/2016/09/07/phd/">considering or pursuing a PhD</a></li>
+        <li><a href="https://www.nytimes.com/2014/11/18/science/researchers-announce-breakthrough-in-content-recognition-software.html?_r=0">New York Times article</a> covering my PhD image captioning work.</li>
+        <li>MIT Technology Review <a href="https://www.technologyreview.com/2016/03/28/161299/hot-commodity/">amusing article</a> from a long time ago.</li>
+        <li>Long ago <a href="https://www.datascienceweekly.org/data-scientist-interviews/training-deep-learning-models-browser-andrej-karpathy-interview">interview with data science weekly</a>.</li>
+        <li>t-SNE visualization of <a href="https://cs.stanford.edu/people/karpathy/cnnembed/">CNN codes for ImageNet</a>, pretty!</li>
+        <li>A long time ago I was really into Rubik's Cubes. I learned to solve them in about 17 seconds and then, frustrated by lack of learning resources, created <a href="https://www.youtube.com/user/badmephisto/featured">YouTube videos</a> explaining the Speedcubing methods. These went on to become relatively popular. There's also my long dead <a href="http://badmephisto.com/">cubing page</a>. Oh, and a video of me at a <a href="https://www.facebook.com/karpathy/videos/715094857292/">Rubik's cube competition</a> :)</li>
+        <li>0 frameworks were used to make this simple responsive website because I am becoming seriously allergic to <a href="https://motherfuckingwebsite.com/">500-pound websites</a>. This one is pure HTML and CSS in two static files and that's it. </li>
+      </ul>
+    </div> -->
+
+        <br>
+        <hr>
+        <div style="float:right"><i class="fa fa-code"></i> with <span style="color: #e25555;">&#9829;</span> by <span class="signature">Muzzu</span></div>
+        <br>
+        <br>
+
+
+        <!-- attempt hiding from spambots :p -->
+        <script type="text/javascript">
+            var e_is_shown = true;
+            document.getElementById('iemail').addEventListener("click", function () {
+                let demail = document.getElementById('demail');
+                demail.innerHTML = 'mohd.muzamil.08' + ' _at_ ' + 'gmail' + '.com';
+                // demail.style.opacity = 0
+                console.log("mail clicked", e_is_shown)
+                if (e_is_shown) {
+                    // demail.style.opacity = 1
+                    demail.style.display = "block"
+                }
+                else {
+                    // demail.style.opacity = 0
+                    demail.style.display = "none"
+                }
+                // demail.style.display = e_is_shown ? none : block;
+                e_is_shown = !e_is_shown;
+            })
+        </script>
+</body>
+
+</html>
+
+
+
+<!-- <div style="background-color: #eee; padding-top: 1px; margin-top: 10px;">
       <div id="featured-talks" class="container">
         <div class="ctitle">featured talks</div>
         <div class="row">
@@ -339,7 +620,7 @@
     </div> -->
 
 
-    <!-- <div style="background-color: #eee; padding-top: 1px; margin-top: 50px; padding-bottom: 30px;">
+<!-- <div style="background-color: #eee; padding-top: 1px; margin-top: 50px; padding-bottom: 30px;">
     <div class="container">
       <div class="ctitle">featured writing</div>
       <ul class="nodot">
@@ -356,84 +637,3 @@
       </ul>
     </div>
     </div> -->
-
-    <!-- <div style="background-color: #eee; padding-top: 1px; margin-top: 10px;">
-    <div id="pet-projects" class="container">
-      <div class="ctitle">projects</div>
-
-      <div class="project">
-        <div class="pico"><img src="assets/puppy.jpg" /></div>
-        <div class="pdesc"><a href="">Proj1</a> blah blah blah </div>
-        <div class="pend"></div>
-      </div>
-
-      <div class="project">
-        <div class="pico"><img src="assets/charseq.jpeg" /></div>
-        <div class="pdesc"><a href="">Proj2</a> blah blah blah </div>
-        <div class="pend"></div>
-      </div>
-    </div> -->
-</div>
-
-    <div class="container">
-      <div class="ctitle">publications</div>
-
-      <div class="pub">
-        <div class="pub-title"><a href="https://link.springer.com/chapter/10.1007/978-3-030-88942-5_21">Controlling BigGAN Image Generation with a Segmentation Network</a></div>
-        <div class="pub-venue">DS 2021</div>
-        <div class="pub-authors">Aman Jaiswal, Harpreet Singh Sodhi, Mohamed Muzamil H, Rajveen Singh Chandhok, Sageev Oore, and Chandramouli Shama Sastry</div>
-      </div>
-
-      <div>
-        <br>
-        Also on <a href="https://scholar.google.com/citations?hl=en&user=wSFGgs8AAAAJ">Google Scholar</a>
-      </div>
-    </div>
-
-    <!-- <div class="container">
-      <div class="ctitle">misc unsorted</div>
-      <ul style="padding-left: 10px;">
-        <li><a href="https://web.eecs.umich.edu/~justincj/">Justin Johnson</a> and I held a reading group on Clubhouse. See <a href="https://www.youtube.com/watch?v=gMc90bqHMSM">YouTube</a> or as <a href="https://podcasts.apple.com/us/podcast/deep-learning-deep-dive/id1555309024">podcast</a>.</li>
-        <li>I joined the 2020 edition of MIT Technology Review's <a href="https://www.technologyreview.com/innovators-under-35/2020/">35 Innovators Under 35</a></li>
-        <li>My <a href="http://karpathy.github.io/">primary blog</a> and my <a href="https://medium.com/@karpathy">other blog</a></li>
-        <li>I like and use <a href="https://www.goodreads.com/user/show/13472185-andrej-karpathy">Goodreads</a> for keeping track of reading, janky as it is.</li>
-        <li>I used to use <a href="https://www.quora.com/session/Andrej-Karpathy/1">Quora</a>. I do not think they made the right choice with aggressive paywalls.</li>
-        <li><a href="http://lossfunctions.tumblr.com/">Loss function Tumblr</a> :D! My collection of funny loss functions.</li>
-        <li>Some advice for <a href="https://cs.stanford.edu/people/karpathy/advice.html">undergrads</a> and advice for those <a href="http://karpathy.github.io/2016/09/07/phd/">considering or pursuing a PhD</a></li>
-        <li><a href="https://www.nytimes.com/2014/11/18/science/researchers-announce-breakthrough-in-content-recognition-software.html?_r=0">New York Times article</a> covering my PhD image captioning work.</li>
-        <li>MIT Technology Review <a href="https://www.technologyreview.com/2016/03/28/161299/hot-commodity/">amusing article</a> from a long time ago.</li>
-        <li>Long ago <a href="https://www.datascienceweekly.org/data-scientist-interviews/training-deep-learning-models-browser-andrej-karpathy-interview">interview with data science weekly</a>.</li>
-        <li>t-SNE visualization of <a href="https://cs.stanford.edu/people/karpathy/cnnembed/">CNN codes for ImageNet</a>, pretty!</li>
-        <li>A long time ago I was really into Rubik's Cubes. I learned to solve them in about 17 seconds and then, frustrated by lack of learning resources, created <a href="https://www.youtube.com/user/badmephisto/featured">YouTube videos</a> explaining the Speedcubing methods. These went on to become relatively popular. There's also my long dead <a href="http://badmephisto.com/">cubing page</a>. Oh, and a video of me at a <a href="https://www.facebook.com/karpathy/videos/715094857292/">Rubik's cube competition</a> :)</li>
-        <li>0 frameworks were used to make this simple responsive website because I am becoming seriously allergic to <a href="https://motherfuckingwebsite.com/">500-pound websites</a>. This one is pure HTML and CSS in two static files and that's it. </li>
-      </ul>
-    </div> -->
-
-    <br>
-    <hr>
-    <br>
-    <!-- <br><br><br><br><br><br><br><br><br> -->
-    
-
-    <!-- attempt hiding from spambots :p -->     
-    <script type="text/javascript">
-      var e_is_shown = true;
-      document.getElementById('iemail').addEventListener("click", function(){
-        let demail = document.getElementById('demail');
-        demail.innerHTML = 'mohd.muzamil.08' + ' _at_ ' + 'gmail' + '.com';
-        // demail.style.opacity = 0
-        console.log("mail clicked", e_is_shown)
-        if(e_is_shown){
-            // demail.style.opacity = 1
-            demail.style.display = "block"
-        }
-        else{
-            // demail.style.opacity = 0
-            demail.style.display = "none"
-        }
-        // demail.style.display = e_is_shown ? none : block;
-        e_is_shown = !e_is_shown;
-      })
-    </script>
-  </body>
-</html>
