@@ -88,7 +88,8 @@ var words = [
     "Databases RDBMS/SQL MongoDB",
     "ETL_and_Analytic_tools Informatica ELK_Stack Tableau IBM_Cognos Grafana", 
     "Cloud_Frameworks/APIs REST_API AWS_Services Heroku",
-    "Devops Agile_Development Git Jenkins Docker Kubernetes Vagrant"
+    "Devops Agile_Development Git Jenkins Docker Kubernetes Vagrant",
+    "HTML CSS Bootstrap JavaScript jQuery D3.js Flask Dash Python Java Linux/Unix_shell_scripting Pytorch Keras Sklearn XGBoost NumPy SciPy Pandas Seaborn Plotly Matplotlib RDBMS/SQL MongoDB Git"
 ]
 //Prepare one of the sample sentences by removing punctuation,
 // creating an array of words and computing a random size attribute.
