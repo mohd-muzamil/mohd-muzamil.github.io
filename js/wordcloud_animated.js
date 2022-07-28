@@ -1,17 +1,19 @@
-function plotVis(){
+function plotVis(selector){
 //Simple animated example of d3-cloud - https://github.com/jasondavies/d3-cloud
 //Based on https://github.com/jasondavies/d3-cloud/blob/master/examples/simple.html
 // Encapsulate the word cloud functionality
 function wordCloud(selector) {
 
+    const width = 0.5 * screen.width
+    const height = 0.5 * screen.height
     var fill = d3.scale.category20();
 
     //Construct the word cloud's SVG element
     var svg = d3.select('#'+selector).append("svg")
-        .attr("width", 500)
-        .attr("height", 500)
+        .attr("width", width)
+        .attr("height", height)
         .append("g")
-        .attr("transform", "translate(250,250)");
+        .attr("transform", `translate(${width/2}, ${height/2})`);
 
 
     //Draw the word cloud
@@ -57,7 +59,7 @@ function wordCloud(selector) {
         //The outside world will need to call this function, so make it part
         // of the wordCloud return value.
         update: function(words) {
-            d3.layout.cloud().size([500, 500])
+            d3.layout.cloud().size([width, height])
                 .words(words)
                 .padding(5)
                 .rotate(function() { return ~~(Math.random() * 2) * 90; })
@@ -72,30 +74,31 @@ function wordCloud(selector) {
 
 //Some sample data - http://en.wikiquote.org/wiki/Opening_lines
 var words = [
-    "Web Technologies HTML  CSS  Bootstrap JavaScript  TypeScript  jQuery D3.js  Flask  Dash  Django Vue.js  React.js  Svelte  node.js",
-    "Programming Languages Python  Java  Linux/Unix shell scripting  Golang ML/Visualization libraries Pytorch  Keras  Sklearn XGBoost  NumPy  SciPy Pandas  Seaborn  Plotly Matplotlib  MATLAB",
-    "Big Data Ecosystem HDFS  PySpark  Spark MLlib Apache Pig  Hive  Sqoop  Kafka",
-    "Databases RDBMS/SQL, MongoDB",
-    "ETL and Analytic tools Informatica, ELK Stack, Tableau, IBM Cognos, Grafana", 
-    "Cloud Frameworks & APIs REST API, AWS Services, Heroku",
-    "Devops Agile Development, Git, Jenkins, Docker, Kubernetes, Vagrant"
+    "Web_Technologies HTML  CSS  Bootstrap JavaScript  TypeScript  jQuery D3.js  Flask  Dash  Django Vue.js  React.js  Svelte  node.js",
+    "Programming_Languages Python  Java  Linux/Unix_shell_scripting  Golang",
+    "ML/Visualization_libraries Pytorch  Keras  Sklearn XGBoost  NumPy  SciPy Pandas  Seaborn  Plotly Matplotlib  MATLAB",
+    "Big_Data_Ecosystem HDFS  PySpark  Spark_MLlib Apache_Pig  Hive  Sqoop  Kafka",
+    "Databases RDBMS/SQL MongoDB",
+    "ETL_and_Analytic_tools Informatica ELK_Stack Tableau IBM_Cognos Grafana", 
+    "Cloud_Frameworks/APIs REST_API AWS_Services Heroku",
+    "Devops Agile_Development Git Jenkins Docker Kubernetes Vagrant"
 ]
-
-// var words = [
-//     "You don't know about me without you have read a book called The Adventures of Tom Sawyer but that ain't no matter.",
-//     "The boy with fair hair lowered himself down the last few feet of rock and began to pick his way toward the lagoon.",
-//     "When Mr. Bilbo Baggins of Bag End announced that he would shortly be celebrating his eleventy-first birthday with a party of special magnificence, there was much talk and excitement in Hobbiton.",
-//     "It was inevitable: the scent of bitter almonds always reminded him of the fate of unrequited love."
-// ]
-
 //Prepare one of the sample sentences by removing punctuation,
 // creating an array of words and computing a random size attribute.
 function getWords(i) {
     return words[i]
-            .replace(/[!\.,:;\?]/g, '')
+            // .replace(/[!,:;\?]/g, '_')
             .split(' ')
-            .map(function(d) {
-                return {text: d, size: 10 + Math.random() * 60};
+            .map(function(d, i) {
+                s1 = 40
+                s2 = 20 + Math.random() * 20
+                if(i == 0){
+                    return {text: '( '+ d + ' )', size: s1};
+                } 
+                else
+                {
+                    return {text: d, size: s2};
+                }
             })
 }
 
@@ -103,16 +106,16 @@ function getWords(i) {
 //In reality the new words would probably come from a server request,
 // user input or some other source.
 function showNewWords(vis, i) {
-    i = i || 0;
-
-    vis.update(getWords(i ++ % words.length))
-    setTimeout(function() { showNewWords(vis, i + 1)}, 3000)
+    // i = i || 0;
+    console.log()
+    vis.update(getWords(i % words.length))
+    setTimeout(function() { showNewWords(vis, i + 1)}, 3500)
 }
 
 //Create a new instance of the word cloud visualisation.
-var myWordCloud = wordCloud("my_dataviz");
+var myWordCloud = wordCloud(selector);
 
 //Start cycling through the demo data
-showNewWords(myWordCloud);
+showNewWords(myWordCloud, 0);
 
 }

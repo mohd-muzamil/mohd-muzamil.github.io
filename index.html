@@ -477,10 +477,17 @@ css<!doctype html>
         </div>
 
         <!--################# TECHNICAL SKILLS VISUALIZATION #################-->
-        <div class="container">
-            <br><div class="title">Technical skills:</div>
-            <div id="my_dataviz"></div>
+        <div style="background-color: #eee; padding-top: 1px; margin-top: 10px;">
+            <div class="container">
+                <div class="ctitle">Technical Skills</div>
+                <div class="pub">
+                    <div class="pub-title">Animated Word Cloud using D3.js</div>
+                </div>
+                <div id="wordCloud"></div>
+            </div>
         </div>
+        
+
         <!-- <div class="container">
       <div class="ctitle">misc unsorted</div>
       <ul style="padding-left: 10px;">
@@ -527,7 +534,7 @@ css<!doctype html>
                 // demail.style.display = e_is_shown ? none : block;
                 e_is_shown = !e_is_shown;
             })
-            plotVis();
+            plotVis("wordCloud");
         </script>
 </body>
 
