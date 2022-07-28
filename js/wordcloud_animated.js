@@ -11,7 +11,7 @@ function wordCloud(selector) {
     var height = 0.5 * screen.height
     if (Math.min(window.screen.width, window.screen.height) < 768) {
         width = 0.5 * screen.width
-        height = 0.2 * screen.height
+        height = 0.5 * screen.width
     }
     wordSize = Math.min(window.screen.width, window.screen.height)/30
 
