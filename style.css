@@ -156,11 +156,12 @@ hr {
     padding-bottom: 30px;
 }
 .card {
+    width:60vw;
     grid-column: span 3;
     vertical-align: top;
     background-color: #eee;
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 5px;
     background-color: white;
     padding-bottom: 10px;
@@ -299,4 +300,9 @@ a {
     border-radius: 50px 25px;
     /* font-family: "Lucida Console"; */
     font-family: Chalkduster;
+}
+
+ul {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
