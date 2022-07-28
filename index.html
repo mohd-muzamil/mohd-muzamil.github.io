@@ -41,7 +41,7 @@
             </div>
             <div id="ddesc">
                 <h1>Mohamed Muzamil H</h1>
-                <h2>I like to bulid intelligent systems</h2>
+                <h2>I like to <i class="fa fa-code"></i> intelligent systems</h2>
                 <div id="dico">
                     <a href="https://www.linkedin.com/in/mohd11/" target="_blank"><img src="assets/clinkedin.svg" class="iico" /></a>
                     <a href="https://github.com/mohd-muzamil" target="_blank"><img src="assets/cgithub.svg" class="iico" /></a>
@@ -506,17 +506,12 @@
             document.getElementById('iemail').addEventListener("click", function () {
                 let demail = document.getElementById('demail');
                 demail.innerHTML = 'mohd.muzamil.08' + ' _at_ ' + 'gmail' + '.com';
-                // demail.style.opacity = 0
-                console.log("mail clicked", e_is_shown)
                 if (e_is_shown) {
-                    // demail.style.opacity = 1
                     demail.style.display = "block"
                 }
                 else {
-                    // demail.style.opacity = 0
                     demail.style.display = "none"
                 }
-                // demail.style.display = e_is_shown ? none : block;
                 e_is_shown = !e_is_shown;
             })
             plotVis("wordCloud");
