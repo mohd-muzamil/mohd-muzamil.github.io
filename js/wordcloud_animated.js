@@ -2,10 +2,19 @@ function plotVis(selector){
 //Simple animated example of d3-cloud - https://github.com/jasondavies/d3-cloud
 //Based on https://github.com/jasondavies/d3-cloud/blob/master/examples/simple.html
 // Encapsulate the word cloud functionality
+
+var wordSize
 function wordCloud(selector) {
 
-    const width = 0.5 * screen.width
-    const height = 0.5 * screen.height
+    console.log(screen.width, screen.height)
+    var width = 0.5 * screen.width
+    var height = 0.5 * screen.height
+    if (Math.min(window.screen.width, window.screen.height) < 768) {
+        width = 300
+        height = 300
+    }
+    wordSize = Math.min(window.screen.width, window.screen.height)/30
+
     var fill = d3.scale.category20();
 
     //Construct the word cloud's SVG element
@@ -90,8 +99,8 @@ function getWords(i) {
             // .replace(/[!,:;\?]/g, '_')
             .split(' ')
             .map(function(d, i) {
-                s1 = 40
-                s2 = 20 + Math.random() * 20
+                s1 = wordSize
+                s2 = wordSize*0.75 + Math.random() * wordSize*0.25
                 if(i == 0){
                     return {text: '( '+ d + ' )', size: s1};
                 } 
