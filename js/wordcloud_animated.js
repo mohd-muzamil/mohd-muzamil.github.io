@@ -7,13 +7,13 @@ var wordSize
 function wordCloud(selector) {
 
     console.log(screen.width, screen.height)
-    var width = 0.5 * screen.width
-    var height = 0.5 * screen.height
+    var width = 0.25 * screen.width
+    var height = 0.25 * screen.height
     if (Math.min(window.screen.width, window.screen.height) < 768) {
         width = 0.5 * screen.width
         height = 0.5 * screen.width
     }
-    wordSize = Math.min(window.screen.width, window.screen.height)/30
+    wordSize = Math.min(window.screen.width, window.screen.height)/50
 
     var fill = d3.scale.category20();
 
