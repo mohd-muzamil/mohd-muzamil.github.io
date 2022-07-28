@@ -206,6 +206,7 @@ hr {
     margin-right: 10px;
 }
 .pdesc {
+    margin-top: 20px;
 }
 .pend {
     clear: both;
@@ -312,4 +313,9 @@ a {
 ul {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+svg {
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }

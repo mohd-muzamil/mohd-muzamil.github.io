@@ -5,15 +5,13 @@ function plotVis(selector){
 
 var wordSize
 function wordCloud(selector) {
-
-    console.log(screen.width, screen.height)
-    var width = 0.35 * screen.width
-    var height = 0.35 * screen.height
-    if (Math.min(window.screen.width, window.screen.height) < 768) {
-        width = 0.5 * screen.width
-        height = 0.5 * screen.width
+    var width = 0.76 * $(document).width();
+    var height = 0.4 * $(window).height();
+    if (Math.min(width, height) < 768) {
+        width = 0.5 * $(document).width();
+        height = 0.5 * $(window).height();
     }
-    wordSize = Math.min(window.screen.width, window.screen.height)/50
+    wordSize = Math.min(width, height)/15
 
     var fill = d3.scale.category20();
 
