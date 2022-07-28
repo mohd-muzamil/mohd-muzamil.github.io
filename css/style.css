@@ -114,6 +114,7 @@ hr {
 }
 .entry {
 }
+
 .entry-dot {
     position: absolute;
     top: 0px;
@@ -259,6 +260,10 @@ table, th, td {
 
   li {
     width:50vw;
+  }
+
+  .about li {
+    width:80vw;
   }
 
 .title {
