@@ -160,7 +160,7 @@ hr {
     width:50vw;
     grid-column: span 3;
     vertical-align: top;
-    background-color: #eee;
+    background-color: inherit;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 5px;
