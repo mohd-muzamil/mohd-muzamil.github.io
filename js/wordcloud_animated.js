@@ -8,8 +8,8 @@ function wordCloud(selector) {
     var width = 0.76 * $(document).width();
     var height = 0.4 * $(window).height();
     if (Math.min(width, height) < 768) {
-        width = 0.5 * $(document).width();
-        height = 0.5 * $(window).height();
+        width = 0.9 * $(document).width();
+        height = width;
     }
     wordSize = Math.min(width, height)/15
 
