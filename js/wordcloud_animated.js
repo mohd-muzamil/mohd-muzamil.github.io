@@ -9,10 +9,10 @@ function wordCloud(selector) {
     console.log(screen.width, screen.height)
     var width = 0.5 * screen.width
     var height = 0.5 * screen.height
-    // if (Math.min(window.screen.width, window.screen.height) < 768) {
-    //     width = 300
-    //     height = 200
-    // }
+    if (Math.min(window.screen.width, window.screen.height) < 768) {
+        width = 0.5 * screen.width
+        height = 0.2 * screen.height
+    }
     wordSize = Math.min(window.screen.width, window.screen.height)/30
 
     var fill = d3.scale.category20();

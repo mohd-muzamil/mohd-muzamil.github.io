@@ -157,7 +157,7 @@ hr {
     padding-bottom: 30px;
 }
 .card {
-    width:60vw;
+    width:50vw;
     grid-column: span 3;
     vertical-align: top;
     background-color: #eee;
@@ -259,11 +259,11 @@ table, th, td {
   }
 
   li {
-    width:50vw;
+    width:40vw;
   }
 
   .about li {
-    width:80vw;
+    width:70vw;
   }
 
 .title {
