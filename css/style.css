@@ -150,6 +150,7 @@ hr {
     color: gray;
     margin-bottom: 10px;
     margin-top: 10px;
+    padding-top: 10px;
 }
 #featured-talks .row {
     grid-column-gap: 10px;
