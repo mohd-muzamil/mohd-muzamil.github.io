@@ -123,14 +123,14 @@ hr {
     height: 10px;
     border-radius: 7px;
     background-color: #cfcfcf;
-    border: 2px solid white;
+    border: 2px solid #eee;
 }
 .timespan {
     grid-column: span 1;
-    font-size: 14px;
+    font-size: 16px;
     text-align: right;
     padding-right: 5px;
-    color: #bbb;
+    color: gray;
 }
 .hassets {
     position: relative;
@@ -302,12 +302,11 @@ a {
     color: white;
     background-color: #756bb1;
     border: 0.4px solid black;
-    opacity: 0.9;
+    opacity: 0.8;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 15px 5px 10px 5px;
-    /* font-family: "Lucida Console"; */
-    font-family: Chalkduster;
+    font-family: "Chalkduster";
 }
 
 ul {

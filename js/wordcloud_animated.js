@@ -5,9 +5,9 @@ function plotVis(selector){
 
 var wordSize
 function wordCloud(selector) {
-    var width = 0.76 * $(document).width();
-    var height = 0.4 * $(window).height();
-    if (Math.min(width, height) < 768) {
+    var width = 0.65 * $(document).width();
+    var height = 0.45 * $(window).height();
+    if (Math.min($(document).width(), $(document).height()) < 768) {
         width = 0.9 * $(document).width();
         height = width;
     }
@@ -31,7 +31,7 @@ function wordCloud(selector) {
         //Entering words
         cloud.enter()
             .append("text")
-            .style("font-family", "Impact")
+            .style("font-family", "Marker Felt")
             .style("fill", function(d, i) { return fill(i); })
             .attr("text-anchor", "middle")
             .attr('font-size', 1)
@@ -69,7 +69,7 @@ function wordCloud(selector) {
             d3.layout.cloud().size([width, height])
                 .words(words)
                 .padding(5)
-                .rotate(function() { return ~~(Math.random() * 2) * 90; })
+                .rotate(function() { return ~~(Math.random() * 2) * 20; })
                 .font("Impact")
                 .fontSize(function(d) { return d.size; })
                 .on("end", draw)
@@ -115,9 +115,8 @@ function getWords(i) {
 // user input or some other source.
 function showNewWords(vis, i) {
     // i = i || 0;
-    console.log()
     vis.update(getWords(i % words.length))
-    setTimeout(function() { showNewWords(vis, i + 1)}, 3500)
+    setTimeout(function() { showNewWords(vis, i + 1)}, 4000)
 }
 
 //Create a new instance of the word cloud visualisation.
