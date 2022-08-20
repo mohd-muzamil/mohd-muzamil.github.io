@@ -148,10 +148,17 @@ hr {
 .ctitle {
     font-size: 30px;
     color: gray;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 10px;
     padding-top: 10px;
 }
+
+.csubtitle {
+    font-size: 20px;
+    color: gray;
+    margin-top: 10px;
+}
+
 #featured-talks .row {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -319,3 +326,30 @@ svg {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: left;
+    /* float:left; */
+    display: inline-flex;
+    /* grid-column: span 3; */
+      /* text-align: center; */
+  }
+
+  .grid-item span{
+    display: block;
+    margin:5px;
+  }
+  .grid-container img {
+    border-radius: 5px;
+    width: auto;
+    height: 75px;
+}
+
