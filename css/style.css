@@ -231,16 +231,17 @@ hr {
     margin-bottom: 10px;
 }
 .pub-title {
+    font-size: 18px;
     display: inline;
     color: #333;
 }
 .pub-venue {
     display: inline;
-    color: #090;
+    /* color: #090; */
 }
 .pub-authors {
     display: block;
-    color: #900;
+    /* color: #900; */
 }
 .tul {
     text-align: center;

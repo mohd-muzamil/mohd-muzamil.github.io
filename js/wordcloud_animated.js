@@ -81,15 +81,15 @@ function wordCloud(selector) {
 
 //Some sample data - http://en.wikiquote.org/wiki/Opening_lines
 var words = [
-    "Web_Technologies HTML  CSS  Bootstrap JavaScript  TypeScript  jQuery D3.js  Flask  Dash  Django Vue.js  React.js  Svelte  node.js",
-    "Programming_Languages Python  Java  Linux/Unix_shell_scripting  Golang",
-    "ML/Visualization_libraries Pytorch  Keras  Sklearn XGBoost  NumPy  SciPy Pandas  Seaborn  Plotly Matplotlib  MATLAB",
+    "Web_Technologies HTML  CSS  Bootstrap JavaScript  TypeScript  jQuery D3.js  Flask  Dash Vue.js  React.js",
+    "Programming_Languages Python  Java  Linux_shell_scripting",
+    "ML/Visualization_libraries Pytorch tensorflow Keras  Sklearn XGBoost  NumPy  SciPy Pandas  Seaborn  Plotly Matplotlib",
     "Big_Data_Ecosystem HDFS  PySpark  Spark_MLlib Apache_Pig  Hive  Sqoop  Kafka",
     "Databases RDBMS/SQL MongoDB",
     "ETL_and_Analytic_tools Informatica ELK_Stack Tableau IBM_Cognos Grafana", 
     "Cloud_Frameworks/APIs REST_API AWS_Services Heroku",
     "Devops Agile_Development Git Jenkins Docker Kubernetes Vagrant",
-    "HTML CSS Bootstrap JavaScript jQuery D3.js Flask Dash Python Java Linux/Unix_shell_scripting Pytorch Keras Sklearn XGBoost NumPy SciPy Pandas Seaborn Plotly Matplotlib RDBMS/SQL MongoDB Git"
+    "HTML CSS Bootstrap JavaScript jQuery D3.js Flask Dash Python Java Linux_shell_scripting Pytorch tensorflow Keras Sklearn XGBoost NumPy SciPy Pandas Seaborn Plotly Matplotlib RDBMS/SQL MongoDB Git"
 ]
 //Prepare one of the sample sentences by removing punctuation,
 // creating an array of words and computing a random size attribute.
@@ -116,7 +116,7 @@ function getWords(i) {
 function showNewWords(vis, i) {
     // i = i || 0;
     vis.update(getWords(i % words.length))
-    setTimeout(function() { showNewWords(vis, i + 1)}, 4000)
+    setTimeout(function() { showNewWords(vis, i + 1)}, 2000)
 }
 
 //Create a new instance of the word cloud visualisation.
