@@ -4,8 +4,8 @@ if (Math.min($(document).width(), $(document).height()) < 768) {
     width = 0.8 * $(document).width();
     height = width;
 }    
-var xStepsBig = d3.range(10, width, 20),
-    yStepsBig = d3.range(10, height, 20),
+var xStepsBig = d3.range(0, width, width/20),
+    yStepsBig = d3.range(0, height, height/20),
     xStepsSmall = d3.range(0, width + 6, 6),
     yStepsSmall = d3.range(0, height + 6, 6);
 

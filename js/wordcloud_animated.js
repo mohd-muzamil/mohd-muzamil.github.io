@@ -83,15 +83,15 @@ function wordCloud(selector) {
 
 //Some sample data - http://en.wikiquote.org/wiki/Opening_lines
 var words = [
-    "Web_Technologies HTML  CSS  Bootstrap JavaScript  TypeScript  jQuery D3.js  Flask  Dash Vue.js  React.js",
-    "Programming_Languages Python  Java  Linux_shell_scripting",
-    "ML/Visualization_libraries Pytorch tensorflow Keras  Sklearn XGBoost  NumPy  SciPy Pandas  Seaborn  Plotly Matplotlib",
-    "Big_Data_Ecosystem HDFS  PySpark  Spark_MLlib Apache_Pig  Hive  Sqoop  Kafka",
-    "Databases RDBMS/SQL MongoDB",
-    "ETL_and_Analytic_tools Informatica ELK_Stack Tableau IBM_Cognos Grafana", 
-    "Cloud_Frameworks/APIs REST_API AWS_Services Heroku",
-    "Devops Agile_Development Git Jenkins Docker Kubernetes Vagrant",
-    "HTML CSS Bootstrap JavaScript jQuery D3.js Flask Dash Python Java Linux_shell_scripting Pytorch tensorflow Keras Sklearn XGBoost NumPy SciPy Pandas Seaborn Plotly Matplotlib RDBMS/SQL MongoDB Git"
+    "Programming_Languages Python JAVA Unix/Linux_Shell_Scripting",
+"AI/Machine_Learning Statistics Predictive_Modelling Classification Clustering Anamoly_Detection Natural_Language Processing(NLP)",
+"Data_Science_Libraries scikit-learn padas NumPy SciPy Plotly Matplotlib seaborn NLTK Spacy",
+"Deep_Learning_Libraries PyTorch Keras",
+"Distributed_Computing Hadoop PySpark",
+"Databases&Cloud SQL MongoDB Amazon_AWS",
+"Web_Development HTML CSS JavaScript jQuery Custom_Data_Visualization_with_D3.js Flask Dash",
+"Others Informatica Airflow Git Docker Jira",
+"Python JAVA Unix/Linux scikit-learn padas NumPy SciPy Plotly Matplotlib seaborn NLTK Spacy PyTorch Keras SQL MongoDB Amazon_AWS HTML CSS JavaScript jQuery D3.js Flask Dash Informatica Airflow Git Docker Jira"
 ]
 //Prepare one of the sample sentences by removing punctuation,
 // creating an array of words and computing a random size attribute.
