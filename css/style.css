@@ -276,8 +276,8 @@ table, th, td {
     width:50vw;
   } */
 
-  .about {
-    width:65vw;
+.about {
+    width:65hw;
     font-size: medium;
   }
 
@@ -299,7 +299,8 @@ font-weight: bold;
 }
 a {
     /* text-decoration: none; */
-    color: palevioletred;
+    /* color: palevioletred; */
+    color: #1f78b4;
 }
 
 /* Clear floats after the columns */
@@ -370,5 +371,6 @@ svg {
   
   path {
     fill: none;
-    stroke: #333;
+    /* stroke: #333; */
+    stroke: #41ab5d
   }
