@@ -34,9 +34,9 @@ body {
     text-align: right;
 }
 #ddesc {
-    padding-top: 40px;
-    padding-left: 20px;
-    grid-column: span 6;
+    padding-top: 50px;
+    grid-column: span 5;
+    text-align: center;
 }
 @media (max-width: 991px) {
     #dpic {
@@ -46,7 +46,6 @@ body {
     #ddesc {
       grid-column: span 12;
       padding-top: 20px;
-      text-align: center;
     }
 }
 h1 {
@@ -55,7 +54,7 @@ h1 {
     padding: 0;
     margin: 0;
 }
-h2 {
+#ddesc span {
     font-weight: normal;
     font-style: italic;
     color: #999;
@@ -111,9 +110,11 @@ hr {
     font-size: 17px;
     padding-left: 20px;
     padding-bottom: 20px;
+    text-align: justify;
 }
-.entry {
-}
+
+/* .entry {
+} */
 
 .entry-dot {
     position: absolute;
@@ -128,7 +129,7 @@ hr {
 .timespan {
     grid-column: span 1;
     font-size: 16px;
-    text-align: right;
+    text-align: center;
     padding-right: 5px;
     color: gray;
 }
@@ -215,6 +216,9 @@ hr {
 }
 .pdesc {
     margin-top: 2px;
+    text-align: justify;
+    text-align-last: left;
+    font-size: medium;
 }
 .pend {
     clear: both;
@@ -244,7 +248,7 @@ hr {
     /* color: #900; */
 }
 .tul {
-    text-align: center;
+    text-align: justify;
     padding: 0;
 }
 .til {
@@ -268,12 +272,13 @@ table, th, td {
     margin-bottom: 10px;
   }
 
-  li {
-    width:40vw;
-  }
+  /* li {
+    width:50vw;
+  } */
 
-  .about li {
+  .about {
     width:65vw;
+    font-size: medium;
   }
 
 .title {
@@ -293,7 +298,8 @@ font-weight: bold;
     margin-bottom: 0px;
 }
 a {
-    text-decoration: none;
+    /* text-decoration: none; */
+    color: palevioletred;
 }
 
 /* Clear floats after the columns */
@@ -321,6 +327,7 @@ a {
 ul {
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size:medium ;
 }
 
 svg {
@@ -356,3 +363,12 @@ svg {
     height: 75px;
 }
 
+.background {
+    fill: none;
+    pointer-events: all;
+  }
+  
+  path {
+    fill: none;
+    stroke: #333;
+  }

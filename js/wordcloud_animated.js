@@ -4,24 +4,26 @@ function plotVis(selector){
 // Encapsulate the word cloud functionality
 
 var wordSize
-function wordCloud(selector) {
+function wordCloud(selector) {    
     var width = 0.65 * $(document).width();
-    var height = 0.45 * $(window).height();
+    var height = 0.45 * width;
     if (Math.min($(document).width(), $(document).height()) < 768) {
         width = 0.9 * $(document).width();
         height = width;
-    }
+    }    
     wordSize = Math.min(width, height)/15
 
     var fill = d3.scale.category20();
 
     //Construct the word cloud's SVG element
-    var svg = d3.select('#'+selector).append("svg")
-        .attr("width", width)
-        .attr("height", height)
+    // var svg = d3.select('#'+selector).append("svg")
+    //     .attr("width", width)
+    //     .attr("height", height)
+    //     .append("g")
+    //     .attr("transform", `translate(${width/2}, ${height/2})`);
+    svg = d3.select('#'+selector).selectAll('*')
         .append("g")
         .attr("transform", `translate(${width/2}, ${height/2})`);
-
 
     //Draw the word cloud
     function draw(words) {
@@ -124,5 +126,4 @@ var myWordCloud = wordCloud(selector);
 
 //Start cycling through the demo data
 showNewWords(myWordCloud, 0);
-
 }
