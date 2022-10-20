@@ -223,6 +223,21 @@ hr {
 .pend {
     clear: both;
 }
+.pop-out
+{
+    transition: transform .2s;
+}
+
+.pop-out:hover
+{
+    -ms-transform: translateZ(0); /* IE 9 */
+    -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+    transform: translateZ(0);
+    -ms-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3);
+    transform-origin: left;
+}
 .pico img {
     height: 80px;
     border-radius: 5px;
