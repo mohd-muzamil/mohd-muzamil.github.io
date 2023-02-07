@@ -1,11 +1,24 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
+    position: relative;
+    /* background-color: white; */
     font-family: sans-serif;
-    font-size: 16px;
     line-height: 1.4;
-    color: #333;
+    /* color: #333; */
+    /* background-size: cover; */
+}
+
+body::before {    
+    content: "";
+    background-image: url("../assets/AlienCat.png");
+    background-size: contain;
+    position: absolute;
+    top: -60px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
 }
 
 /* Layout */
@@ -14,6 +27,7 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    position: relative;
 }
 @media (min-width: 992px) {
     .container {
@@ -107,7 +121,7 @@ hr {
 .desc {
     grid-column: span 10;
     vertical-align: top;
-    font-size: 17px;
+    font-size: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
     text-align: justify;
@@ -193,7 +207,7 @@ hr {
     height: 30px;
     vertical-align: top;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 18px;
 }
 @media (max-width: 768px) {
     .cdesc {
@@ -218,11 +232,12 @@ hr {
     margin-top: 2px;
     text-align: justify;
     text-align-last: left;
-    font-size: medium;
+    font-size: 18px;
 }
 .pend {
     clear: both;
 }
+
 .pop-out
 {
     transition: transform .2s;
@@ -238,6 +253,7 @@ hr {
     transform: scale(3);
     transform-origin: left;
 }
+
 .pico img {
     height: 80px;
     border-radius: 5px;
@@ -293,7 +309,7 @@ table, th, td {
 
 .about {
     width:65hw;
-    font-size: medium;
+    font-size: 18px;
   }
 
 .title {
@@ -343,7 +359,7 @@ a {
 ul {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size:medium ;
+    font-size:18px ;
 }
 
 svg {

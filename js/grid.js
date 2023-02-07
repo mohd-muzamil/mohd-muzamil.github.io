@@ -1,11 +1,14 @@
-var width = 0.65 * $(document).width();
+var width = 0.75 * $(document).width();
 var height = 0.45 * width;
 if (Math.min($(document).width(), $(document).height()) < 768) {
-    width = 0.8 * $(document).width();
+    width = 0.95 * $(document).width();
     height = width;
-}    
-var xStepsBig = d3.range(0, width, 20),
-    yStepsBig = d3.range(0, height, 20),
+}
+width = Math.floor(width/40) * 40
+height = Math.floor(height/20) * 20
+
+var xStepsBig = d3.range(0, width, width/40),
+    yStepsBig = d3.range(0, height, height/20),
     xStepsSmall = d3.range(0, width + 6, 6),
     yStepsSmall = d3.range(0, height + 6, 6);
 
@@ -28,7 +31,7 @@ svg.selectAll(".x")
   .enter().append("path")
     .attr("class", "x")
     .attr("stroke-width", "0.5")
-    .attr("opacity", 0.5)
+    // .attr("opacity", 0.5)
     .datum(function(x) { return yStepsSmall.map(function(y) { return [x, y]; }); });
 
 svg.selectAll(".y")
@@ -36,7 +39,7 @@ svg.selectAll(".y")
   .enter().append("path")
     .attr("class", "y")
     .attr("stroke-width", "0.5")
-    .attr("opacity", 0.5)
+    // .attr("opacity", 0.5)
     .datum(function(y) { return xStepsSmall.map(function(x) { return [x, y]; }); });
 
 var path = svg.selectAll("path")

@@ -1,0 +1,49 @@
+/* ref: https://www.shapedivider.app */
+/* WAVE TOP */
+.custom-shape-divider-top-1675208355 {
+    position: absolute;
+    top: -20;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1675208355 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 1000px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1675208355 .shape-fill {
+    fill: purple;
+    opacity: 0.1;
+}
+
+/* WAVE BOTTOM */
+.custom-shape-divider-bottom-1675208227 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1675208227 svg {
+    position: relative;
+    /* display: block; */
+    width: calc(100% + 1.3px);
+    height: 500px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1675208227 .shape-fill {
+    fill: purple;
+    opacity: 0.1;
+}
+
