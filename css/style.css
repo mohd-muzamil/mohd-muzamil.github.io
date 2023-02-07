@@ -11,7 +11,7 @@ body {
 
 body::before {    
     content: "";
-    background-image: url("../../assets/AlienCat.png");
+    background-image: url("../assets/AlienCat.png");
     background-size: contain;
     position: absolute;
     top: -60px;
